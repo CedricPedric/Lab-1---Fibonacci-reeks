@@ -2,11 +2,14 @@ var a = 0
 var b = 1
 var c = 0
 
+function fibonacci(howMuch) {
+    for (var i = 0; i < howMuch; i++) {
+        document.write(c + " ")
+        c = a + b
+        a = b
+        b = c
+    }
+    return ( document.write(c + " "))
+};
 
-for (var i = 0; i < 20; i++) {
-    console.log(c);
-    c = a + b
-    a = b
-    b = c
-}
-
+fibonacci(20)
